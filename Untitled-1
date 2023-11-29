@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="start-screen">
+            <h1>Wähle eine Kategorie:</h1>
+            <button onclick="startQuiz('category1')">Kategorie 1</button>
+            <button onclick="startQuiz('category2')">Kategorie 2</button>
+            <button onclick="startQuiz('category3')">Kategorie 3</button>
+        </div>
+
+        <div id="quiz-screen" style="display: none;">
+            <h2 id="question">Frage hier</h2>
+            <button onclick="showSolution()">Lösung anzeigen</button>
+        </div>
+    </div>
+</body>
+</html>
